@@ -1,0 +1,51 @@
+{
+  "name": "appveyor-env-tester",
+  "version": "1.0.0",
+  "description": "Tests support for deps of cross-browser-tests-runner across node versions on Appveyor",
+  "main": "index.js",
+  "scripts": {
+    "test": "dir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cross-browser-tests-runner/appveyor-env-tester.git"
+  },
+  "author": "Reetesh Ranjan <reeteshranjan@piaxis.tech>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cross-browser-tests-runner/appveyor-env-tester/issues"
+  },
+  "homepage": "https://github.com/cross-browser-tests-runner/appveyor-env-tester#readme",
+  "engines": {
+    "node": ">=4",
+    "npm": ">=2.15.11"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^3.0.0",
+    "chai-spies": "^0.7.1",
+    "codecov": "^2.3.0",
+    "coveralls": "^2.13.1",
+    "eslint": "^4.5.0",
+    "finalhandler": "^1.0.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.0",
+    "nock": "^9.0.14",
+    "serve-static": "^1.12.4",
+    "testem": "^1.18.4"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "js-yaml": "^3.9.1",
+    "minimist": "^1.2.0",
+    "p-retry": "^1.0.0",
+    "ps-node": "^0.1.6",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "useragent": "^2.2.1",
+    "uuid": "^3.1.0"
+  }
+}
