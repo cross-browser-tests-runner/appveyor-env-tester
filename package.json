@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/cross-browser-tests-runner/appveyor-env-tester#readme",
   "dependencies": {
-    "nodemon": "^1.12.1",
     "ps-node": "^0.1.6"
   }
 }
