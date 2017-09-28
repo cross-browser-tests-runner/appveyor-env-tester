@@ -21,8 +21,12 @@ install:
 before_test:
   - ps: $wait = Start-Process -PassThru node .\wait.js
 
+test_script:
+  - npm run test
+
 after_test:
   - ps: Stop-Process -InputObject $wait
+  - type .\out.txt
 
 build: off
 
