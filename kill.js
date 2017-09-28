@@ -14,7 +14,7 @@ ps.lookup({
   list.forEach(proc => {
     console.log('proc %s', JSON.stringify(proc))
     console.log('killing %s', proc.pid)
-    process.kill(parseInt(proc.pid), 'SIGINT')
+    process.kill(parseInt(proc.pid), 'SIGHUP')
   })
   if(list.length) f()  
 })

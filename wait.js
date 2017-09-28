@@ -15,4 +15,8 @@ signals.forEach(function(sig) {
   })
 })
 
+process.on('exit', (code) => {
+  fs.writeFileSync(file, 'Exiting with code ' + code)
+})
+
 fs.writeFileSync(file, 'Started waiting...\n')
