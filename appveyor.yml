@@ -17,16 +17,22 @@ init:
 
 install:
   - ps: Install-Product node $env:nodejs_version
+  - npm install
 
 before_test:
-  - ps: $wait = Start-Process -PassThru node .\wait.js
+  - ps: Start-Process node wait.js
 
 test_script:
   - npm run test
 
 after_test:
-  - ps: Stop-Process -InputObject $wait
-  - type .\out.txt
+  - cmd: type .\out.txt
+  - cmd: dir
+  - cmd: node kill.js
+  - cmd: type .\out.txt
+  - cmd: dir
+
+#  - ps: Stop-Process -InputObject $wait
 
 build: off
 
